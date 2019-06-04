@@ -22,8 +22,10 @@ public class Produto implements Serializable{
 	
 	@NotNull
 	private String nome;
+	
 	@NotNull
 	private BigDecimal quantidade;
+	
 	@NotNull
 	private BigDecimal valor;
 	

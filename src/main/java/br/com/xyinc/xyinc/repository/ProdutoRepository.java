@@ -6,4 +6,5 @@ import br.com.xyinc.xyinc.models.Produto;
 
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 
+	Produto findById(long id);
 }
