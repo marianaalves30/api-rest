@@ -1,4 +1,4 @@
-package br.com.xyinc.xyinc.config;
+package br.com.xyinc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +23,7 @@ public class Swaggerconfig {
 		
 		return new Docket(DocumentationType.SWAGGER_2)
 		.select()
-		.apis(RequestHandlerSelectors.basePackage("br.com.xyinc.xyinc"))
+		.apis(RequestHandlerSelectors.basePackage("br.com.xyinc"))
 		.paths(regex("/api.*"))
 		.build()
 		.apiInfo(metaInfo());
